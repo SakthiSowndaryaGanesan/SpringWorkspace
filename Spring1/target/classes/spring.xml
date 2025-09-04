@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- <bean id="alien" class="SpringDemo.Alien" scope="prototype"> -->
+
+<bean id="alien" class="SpringDemo.Alien" autowire="byType">
+  <!--  <constructor-arg ref="lap1" type="SpringDemo.Laptop" />
+    <constructor-arg value="30" type="int" />  -->
+
+  <!--   <property name="age" value="21"> </property> -->
+  <!--  <property name="lap" ref="lap1"></property>  -->
+
+    <constructor-arg name="com" ref="lap1" />
+<!--    <constructor-arg name="age" value="30" />-->
+</bean>
+    <bean id="lap1" class="SpringDemo.Laptop"> </bean>
+    <bean id="desk" class="SpringDemo.Desktop"> </bean>
+</beans>

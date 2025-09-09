@@ -1,4 +1,4 @@
-package com.SpringProject.SpringDemo;
+package com.SpringProject.SpringDemo.model;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

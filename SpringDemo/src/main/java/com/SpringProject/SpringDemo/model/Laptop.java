@@ -1,6 +1,5 @@
-package com.SpringProject.SpringDemo;
+package com.SpringProject.SpringDemo.model;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
